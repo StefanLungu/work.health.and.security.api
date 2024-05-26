@@ -1,12 +1,10 @@
-﻿using System;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using whs.api.entities.enums;
 
 namespace whs.api.entities.management;
 
-public class User
+public class User : BaseEntity
 {
-    public Guid UniqueId { get; set; }
     public string Username { get; set; }
     public string Description { get; set; }
     public string EmailAddress { get; set; }
