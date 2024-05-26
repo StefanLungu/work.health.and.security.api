@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\whs.api.entities.configurations\whs.api.entities.configurations.csproj" />
+    <ProjectReference Include="..\whs.api.repository.abstractions\whs.api.repository.abstractions.csproj" />
   </ItemGroup>
 
 </Project>
