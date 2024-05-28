@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:8692",
+      "applicationUrl": "http://localhost:40001",
       "sslPort": 44313
     }
   },
@@ -12,7 +12,7 @@
     "whs.api.manager": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:8283",
+      "applicationUrl": "https://localhost:40001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
