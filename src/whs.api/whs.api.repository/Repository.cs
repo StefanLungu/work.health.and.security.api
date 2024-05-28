@@ -5,7 +5,7 @@ using whs.api.repository.context;
 
 namespace whs.api.repository;
 
-internal class Repository<T>(WHSDbContext context) : IRepository<T> where T : BaseEntity, new()
+public class Repository<T>(WHSDbContext context) : IRepository<T> where T : BaseEntity, new()
 {
 	protected readonly WHSDbContext _context = context;
 

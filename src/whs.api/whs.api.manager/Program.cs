@@ -1,6 +1,10 @@
+using Serilog;
 using whs.api.manager.infrastructure.dependencyinjection;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((context, configuration) =>
+	configuration.ReadFrom.Configuration(context.Configuration));
 
 // Add services to the container.
 builder.Services.AddCoreServiceCollection(builder.Configuration);
