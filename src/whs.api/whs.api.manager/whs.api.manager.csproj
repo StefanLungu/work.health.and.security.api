@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="utils\**" />
+    <Content Remove="utils\**" />
+    <EmbeddedResource Remove="utils\**" />
+    <None Remove="utils\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
@@ -21,10 +28,6 @@
     <ProjectReference Include="..\whs.api.business.validations\whs.api.business.validations.csproj" />
     <ProjectReference Include="..\whs.api.business\whs.api.business.csproj" />
     <ProjectReference Include="..\whs.api.repository.extensions\whs.api.repository.extensions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="utils\" />
   </ItemGroup>
 
 </Project>
